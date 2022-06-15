@@ -18,4 +18,24 @@ h1,h2,h3,h4,h5,h6 {
   font-family: "Patua One", serif;
   letter-spacing: 2px;
 }
+/* main container */
+#container {
 
+}
+
+/* article containing cities, walkers and pets cards */
+.details {
+
+	display: flex; flex-direction: row;
+}
+
+/* single cards */
+.detail--column {
+	padding: 1rem;
+	
+}
+
+/* assignment article */
+.assignments {
+
+}
