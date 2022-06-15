@@ -20,7 +20,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 /* main container */
 #container {
-
+margin: 1rem;
 }
 
 /* article containing cities, walkers and pets cards */
@@ -32,7 +32,6 @@ h1,h2,h3,h4,h5,h6 {
 /* single cards */
 .detail--column {
 	padding: 1rem;
-	
 }
 
 /* assignment article */
