@@ -7,16 +7,16 @@
 */
 const database = {
     //walker objects
-    walkers: [{         
+    walkers: [{
         id: 1,
         name: "Alphonse Meron",
         email: "ameron0@mashable.com",
-       
+
     }, {
         id: 2,
         name: "Damara Pentecust",
         email: "dpentecust1@apache.org",
-      
+
     }, {
         id: 3,
         name: "Anna Bowton",
@@ -26,17 +26,17 @@ const database = {
         id: 4,
         name: "Hunfredo Drynan",
         email: "hdrynan3@bizjournals.com",
-   
+
     }, {
         id: 5,
         name: "Elmira Bick",
         email: "ebick4@biblegateway.com",
- 
+
     }, {
         id: 6,
         name: "Bernie Dreger",
         email: "bdreger5@zimbio.com",
-   
+
     }, {
         id: 7,
         name: "Rolando Gault",
@@ -46,20 +46,20 @@ const database = {
         id: 8,
         name: "Tiffanie Tubby",
         email: "ttubby7@intel.com",
-   
+
     }, {
         id: 9,
         name: "Tomlin Cutill",
         email: "tcutill8@marketwatch.com",
-      
+
     }, {
         id: 10,
         name: "Arv Biddle",
         email: "abiddle9@cafepress.com",
-     
+
     }],
-     //pet objects
-    pets: [{             
+    //pet objects
+    pets: [{
         id: 1,
         name: "Dianemarie Hartness",
         walkerId: 3
@@ -101,7 +101,7 @@ const database = {
         walkerId: 7
     }],
     //walkerCities objects
-    walkerCities: [                           
+    walkerCities: [
         { id: 1, walkerId: 10, cityId: 1 },
         { id: 2, walkerId: 8, cityId: 6 },
         { id: 3, walkerId: 5, cityId: 4 },
@@ -118,34 +118,35 @@ const database = {
         { id: 14, walkerId: 10, cityId: 2 },
     ],
     //Cities objects
-    cities: [                             
-        { id: 1, name: "Pittsburgh"},
-        { id: 2, name: "Minneapolis"},
-        { id: 3, name: "Phoenix"},
-        { id: 4, name: "Tucson"},
-        { id: 5, name: "Denver"},
-        { id: 6, name: "Boise"},
-        { id: 7, name: "San Diego"},
-        { id: 8, name: "Sarasota"},
-        { id: 9, name: "White Plains"},
-        { id: 10, name: "Chicago"}
+    cities: [
+        { id: 1, name: "Pittsburgh" },
+        { id: 2, name: "Minneapolis" },
+        { id: 3, name: "Phoenix" },
+        { id: 4, name: "Tucson" },
+        { id: 5, name: "Denver" },
+        { id: 6, name: "Boise" },
+        { id: 7, name: "San Diego" },
+        { id: 8, name: "Sarasota" },
+        { id: 9, name: "White Plains" },
+        { id: 10, name: "Chicago" }
     ]
 }
 
 export const getWalkers = () => {
-    return database.walkers.map(walker => ({...walker}))
+    return database.walkers.map(walker => ({ ...walker }))
 }
 
 export const getPets = () => {
-    return database.pets.map(pet => ({...pet}))
+    return database.pets.map(pet => ({ ...pet }))
 }
 
 //getter function
 export const getCities = () => {
-    return database.cities.map(city => ({...city}))
+    return database.cities.map(city => ({ ...city }))
 }
 
 //getter function
 export const getWalkerCities = () => {
-    return database.walkerCities.map(walkerCity => ({...walkerCity}))
+    return database.walkerCities.map(walkerCity => ({ ...walkerCity }))
 }
+

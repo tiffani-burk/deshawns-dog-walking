@@ -1,4 +1,6 @@
 import { getWalkers } from "./database.js"
+import { filterWalkerCitiesByWalker } from "./Assignments.js"
+
 
 
 //this is a click event, it's eliciting an response from an action (the "click")
@@ -13,7 +15,8 @@ document.addEventListener(
 
             for (const walker of walkers) {
                 if (walker.id === parseInt(walkerId)) { //turns the string from line 16 into an integer
-                    window.alert(`${walker.name} services ${walker.city}`)
+        
+                    window.alert(`${walker.name} services ${filterWalkerCitiesByWalker(walker)}`)
                 }
             }
         }

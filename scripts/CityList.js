@@ -1,11 +1,11 @@
-import { getCities, getWalkers } from "./database.js"
+import { getCities } from "./database.js"
 
 
 
 //invoke getCities and store to var called cities
 const cities = getCities()
 
-const walkers = getWalkers()
+
 
 
 export const CityList = () => {
